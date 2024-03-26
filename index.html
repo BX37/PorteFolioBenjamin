@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <script> /* Menu déroulant */
+        $(document).ready(function() {
+            $(".menu-item").hover(
+                function() {
+                    $(this).find(".sous-menu").slideDown(200);
+                },
+                function() {
+                    $(this).find(".sous-menu").slideUp(200);
+                }
+            );
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Importation Header 1/2 -->
+    <script>
+    $(function() {
+    $("#header-container").load("header.html");
+    });
+    </script>
+
+</head>
+<body>
+    <div id="header-container"></div> <!-- Importation Header 2/2 -->
+    
+
+    <main>
+        <div class="container taille8">
+            <img src="images/ordinateur.png" alt="">
+            <div class="divTexte">
+                <h2>Nouria Belgreine</h2>
+                <h3>BTS SIO SLAM</h3>
+            </div>
+        </div>
+    </main>
+
+    <p class="pCopyright fixed">Copyright © 2023 Nouria Belgreine</p>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Menu déroulant -->
+</body>
+</html>

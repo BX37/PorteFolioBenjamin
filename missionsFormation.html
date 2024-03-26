@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missions formation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="e4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Importation Header 1/2 -->
+    <script>
+    $(function() {
+    $("#header-container").load("header.html");
+    });
+    </script>
+</head>
+<body>
+
+    <div id="header-container"></div> <!-- Importation Header 2/2 -->
+    
+    <!-- MAIN -->
+    <main>
+
+        <section class="taille9">
+
+            <h2 class="h2Mission">Missions réalisées en formation</h2> 
+
+            <div class="containerMission">
+                <div class="divCard">
+                    <h3>Mission 1 : LeBonCoin</h3> <hr>
+                    <p class="description"> Projet de groupe en vue de la conception et du développement d'un site e-commerce réalisé en PHP/MySQL & HTML/CSS pour la vente d'articles en ligne.</p>
+                    <a class="bouton btnFicheMission" href="missions/FormationLeBonCoin.pdf" target="_blank">Fiche mission</a>
+                </div>
+                <div class="divCard">
+                    <h3>Mission 2 : Menu 2D</h3> <hr>
+                    <p class="description">Création d'un programme en C# permettant de gérer un tableau à 1 ou 2 dimensions avec options d'initialisation, d’affichage, de dédoublonnage, de suppression et d'ajout de valeurs.</p>
+                    <a class="bouton btnFicheMission" href="missions/FormationMenu2D.pdf" target="_blank">Fiche mission</a>
+                </div>
+                <div class="divCard">
+                    <h3>Mission 3 : Démineur</h3> <hr>
+                    <p class="description">Programmation d'un jeu de démineur en console réalisé en C# offrant la possibilité de jouer en 10 cases et 2 mines ou 16 cases et 4 mines.
+                    </p>
+                    <a class="bouton btnFicheMission" href="missions/FormationDemineur.pdf" target="_blank">Fiche mission</a>
+                </div>
+            </div>
+
+            <div class="containerMission containerMission2">
+                <div class="divCard">
+                    <h3>Mission 4 : Réseau Social</h3> <hr>
+                    <p class="description"> Projet de groupe en vue de la conception et du développement d'un réseau social réalisé en PHP/MySQL & HTML/CSS.</p>
+                    <a class="bouton btnFicheMission" href="missions/FormationReseauSocial.pdf" target="_blank">Fiche mission</a>
+                </div>
+                <div class="divCard">
+                    <h3>Mission 5 : Calculatrice</h3> <hr>
+                    <p class="description">Création d'une calculatrice en C#</p>
+                    <a class="bouton btnFicheMission" href="missions/FormationCalculatrice.pdf" target="_blank">Fiche mission</a>
+                </div>
+                <div class="divCard">
+                    <h3>Mission 6 : Portfolio</h3> <hr>
+                    <p class="description">Création de mon Portfolio en HTML/CSS présentant mon parcours en BTS SIO SLAM.
+                    </p>
+                    <a class="bouton btnFicheMission" href="missions/FormationPortfolio.pdf" target="_blank">Fiche mission</a>
+                </div>
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+    <p class="pCopyright fixed">Copyright © 2023 Nouria Belgreine</p>
+
+</body>
+</html>

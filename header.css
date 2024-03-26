@@ -1,0 +1,109 @@
+header a{
+    color: black;
+}
+
+span{
+    color: #58acff;
+}
+
+.divMyPortfolio{
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+
+header{
+    line-height: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background-color: white;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.containerHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-principal{
+    display: flex;
+    font-weight: bold;
+    gap: 17vh;
+}
+
+.listeDynamique { /* ANIMATION <\> */
+    /* line-height: 2em; */
+    /* height: 5em; */
+    overflow: hidden;
+    }
+
+.listeDynamique li {
+    color: rgb(88, 172, 255);
+    font-size: 1.6em;
+    top: 0;
+    position: relative;
+    animation: slide 15s steps(1) infinite;
+}
+@keyframes slide {
+    100% {
+        /* top: -5em; */
+    }
+} 
+.listeDynamique li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 75%;
+    width: 100%;
+    background: white;
+    border-left: 2px solid #181818;
+    animation: typing 3s steps(10) infinite;
+}
+@keyframes typing{
+    40%,
+    60%{
+        left: calc(100% + 30px);
+    }
+    100% {
+        left: 0;
+    }
+} /* FIN ANIMATION <\> */
+
+/* Début animation pour souligner a de nav */
+nav a { 
+    position: relative;
+    color: black;
+}
+nav a::before {
+    content: "";
+    position: absolute;
+    top: 1.5em;
+    left: 0;
+    width: 100%;
+    height: 0.12em;
+    background-color: #58acff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+  nav a:hover::before {
+    transform: scaleX(1); 
+} 
+/*Fin animation a de nav 
+
+/*Début mise en forme du sous-menu */
+.sous-menu {
+    display: none; /*masque les sous-menus*/
+}
+.menu-item:hover .sous-menu { /* Au survol de menu-item, les éléments avec la classe sous-menu  */
+    display: block; /*  seront affichés */
+    position: absolute; /* positionnés par rapport au conteneur */
+    background-color: #ffffff;
+    padding: 1em;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    border-radius: 3px;
+}
+.menu-item:hover .sous-menu li:last-child {
+    margin-bottom: 0; /* éviter un espacement inutile après le dernier élément de la liste. */
+}
+/*Fin mise en forme du sous-menu */

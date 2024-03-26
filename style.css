@@ -1,0 +1,63 @@
+/* Bibliothèque ombres : https://getcssscan.com/css-box-shadow-examples */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Nunito', sans-serif;
+}
+  
+body{
+    background-color: #f8f8f8;
+}
+
+main{
+    padding-top: 50px;
+}
+
+.taille9{
+    width : 90%;
+    margin: auto;
+}
+
+.taille8{
+    width : 80%;
+    margin: auto;
+}
+
+.petitFlex{
+    display: flex;
+    gap: 5px;
+}
+
+.bouton{
+    border-radius: 30px;
+    width: 25vh;
+    line-height: 5.5vh;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.spanDodger{
+    color: dodgerblue;
+}
+
+.pCopyright{
+    text-align: center;
+    line-height: 30px;
+    width: 100%;
+    background-color: white;
+    font-size: small;
+    color: slategrey;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.fixed {
+    position: fixed;  /* pour fixer le header en bas de page si pas assez de contenu  */
+    bottom: 0;
+    left: 0;
+}

@@ -1,0 +1,28 @@
+img{
+    margin-top: 2px;
+    max-width: 100%;
+    max-height: calc(100vh - 83px);
+    height: auto;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+h2{
+    font-family: 'Pacifico', cursive;
+    font-size: 6vh;
+    letter-spacing: 0.45vh;
+}
+
+h3{
+    color: rgb(88, 172, 255);
+    font-size: 4vh;
+    letter-spacing: 0.1vh;
+}
+
+.divTexte{
+    text-align: center;
+}

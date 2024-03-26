@@ -1,0 +1,91 @@
+/* Tableau de synthèse */
+
+.sectionTablo{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 8vh;
+    flex-direction: column;
+}
+
+.divTablo{
+    display: flex;
+    justify-content: space-between;
+    margin: 8vh 0 8vh 0;
+}
+
+.btnTabloSynthese{
+    background-color: limegreen;
+    width: 25vh; 
+    justify-content: center;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+.btnTabloSynthese:hover{
+    background-color: #58d258;
+}
+
+/* Fiches missions */
+
+.h2Mission{
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 11vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 5vh; 
+    color: dodgerblue;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 6.5vh;
+    background-color: white;
+}
+
+h3{
+    margin-top: 3vh;
+    text-align: center;
+    color: dodgerblue;
+}
+
+hr{
+    margin: 2vh 0 2vh 0;
+    height: 1%;
+    width: 98%;
+    background-color: #f5f5f5;
+    border: none;
+}
+
+.containerMission{
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerMission2{
+    margin : 20vh 0 27vh 0;
+}
+
+.divCard{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width: 50vh;
+    height: 45vh;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: white;
+}
+
+.description{
+    margin: 0 5vh 0px 5vh;
+}
+
+.btnFicheMission{
+    position: absolute;
+    bottom : 4vh;
+    background-color: dodgerblue;
+}
+.btnFicheMission:hover{
+    background-color: rgb(88, 172, 255);
+}
+
